@@ -67,6 +67,10 @@ body {
   position: relative;
 }
 
+.hero-image {
+  position: relative;
+}
+
 .heroimg {
   width: 100%;
 }
@@ -79,7 +83,7 @@ body {
   height: 40px;
   padding: 6px;
   justify-content: space-around;
-  top: 308px;
+  bottom: 5px;
   right: 0;
 }
 .arrow-btn img {
