@@ -15,11 +15,11 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 44%); text-decoration: none}
   </style>
 </head>
 <body>
-  <div class="navbar">
+  <div class="navbar-mobile">
     <div id="navbar" class="">
       <div class="mainbar">
         <p class="mainbar-btn mbtn1"><img class="menu-button" src="images/icon-hamburger.svg" alt="menu-button"></p>
@@ -36,43 +36,59 @@
       </div>
     </div>
   </div>
+  <div class="navbar-desktop">
+    <div class="list-desktop">
+      <p class="navbar-btn btn1"><img src="images/logo.svg" alt=""></p>
+      <p class="navbar-btn btn2 hover">Home</p>
+      <p class="navbar-btn btn3 hover">Shop</p>
+      <p class="navbar-btn btn4 hover">About</p>
+      <p class="navbar-btn btn5 hover">Contact</p>
+    </div>
+  </div>
 
   <div class="hero-block">
     <div class="block hero-image">
-      <img class="heroimg" src="images/mobile-image-hero-1.jpg" alt="main-image">
+      <!-- mobile -->
+      <div class="mobile">
+        <img class="heroimg b1" src="images/mobile-image-hero-1.jpg" alt="main-image">
+        <img class="heroimg b2 hide" src="images/mobile-image-hero-2.jpg" alt="main-image">
+        <img class="heroimg b3 hide" src="images/mobile-image-hero-3.jpg" alt="main-image">
+      </div>
+      <!-- Desktop -->
+      <div class="desktop">
+        <img class="heroimg b1" src="images/desktop-image-hero-1.jpg" alt="main-image">
+        <img class="heroimg b2 hide" src="images/desktop-image-hero-2.jpg" alt="main-image">
+        <img class="heroimg b3 hide" src="images/desktop-image-hero-3.jpg" alt="main-image">
+      </div>
       <div class="arrow-btn">
-        <img src="images/icon-angle-left.svg" alt="left-arrow">
-        <img src="images/icon-angle-right.svg" alt="right-arrow">
+        <img class="left-arrow" src="images/icon-angle-left.svg" alt="left-arrow">
+        <img class="right-arrow" src="images/icon-angle-right.svg" alt="right-arrow">
       </div>
     </div>
     <div class="block box">
-      <h1>Discover innovative ways to decorate</h1>
+      <div class="b1">
+        <h1>Discover innovative ways to decorate</h1>
 
-      <p>We provide unmatched quality, comfort, and style for property owners across the country.
-      Our experts combine form and function in bringing your vision to life. Create a room in your
-      own style with our collection and make your property a reflection of you and what you love.</p>
+        <p>We provide unmatched quality, comfort, and style for property owners across the country.
+        Our experts combine form and function in bringing your vision to life. Create a room in your
+        own style with our collection and make your property a reflection of you and what you love.</p>
+      </div>
+      <div class="b2 hide">
+        <h1>We are available all across the globe</h1>
+
+        <p>With stores all over the world, it's easy for you to find furniture for your home or place of business.
+        Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+        store locator. Any questions? Don't hesitate to contact us today.</p>
+      </div>
+      <div class="b3 hide">
+        <h1>Manufactured with the best materials</h1>
+
+        <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
+        to ensure that every product is made as perfect and as consistent as possible. With three decades of
+        experience in this industry, we understand what customers want for their home and office.</p>
+      </div>
 
       <p class="show-btn">SHOP NOW<span><img src="images/icon-arrow.svg" alt=""></span></p>
-    </div>
-
-    <div class="block box hide">
-      <h1>We are available all across the globe</h1>
-
-      <p>With stores all over the world, it's easy for you to find furniture for your home or place of business.
-      Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
-      store locator. Any questions? Don't hesitate to contact us today.</p>
-
-      <p>Shop now</p>
-    </div>
-
-    <div class="block box hide">
-      <h1>Manufactured with the best materials</h1>
-
-      <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
-      to ensure that every product is made as perfect and as consistent as possible. With three decades of
-      experience in this industry, we understand what customers want for their home and office.</p>
-
-      <p>Shop now</p>
     </div>
   </div>
 
@@ -95,7 +111,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/riteessshh">riteessshh</a>.
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>

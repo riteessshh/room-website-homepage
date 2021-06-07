@@ -4,8 +4,12 @@ body
 
 .hide
   display: none
+.navbar-desktop
+  display: none
+.desktop
+  display: none
 
-.navbar
+.navbar-mobile
   position: absolute
   left: 0
   width: 100%
@@ -64,6 +68,7 @@ body
     height: 25px
     position: relative
     top: 15%
+    cursor: pointer
   p
     display: inline
     width: 100px
@@ -83,6 +88,9 @@ body
     font-weight: bold
     font-size: 1rem
     letter-spacing: 5px
+    cursor: pointer
+  .show-btn:hover
+    color: hsl(0, 0%, 63%)
     img
       padding-left: 10px
 
@@ -100,3 +108,98 @@ body
     line-height: 1.5
 .about-image
   width: 100%
+
+@media (min-width: 750px)
+  .mobile
+    display: none
+  .desktop
+    display: block
+
+@media (min-width: 1000px)
+  .navbar-mobile
+    display: none
+  .mobile
+    display: none
+  .desktop
+    display: block
+  .navbar-desktop
+    display: block
+    position: absolute
+    left: 0
+    width: 100%
+    z-index: 2
+    p
+      margin: 0
+      color: inherit
+      font-size: 14px
+      font-weight: 600
+    .hover:hover
+      background-image: linear-gradient(white, white)
+      background-position: bottom center
+      background-size: 40% 2px
+      background-repeat: no-repeat
+      padding-bottom: 4px
+      border-radius: 10px
+  .list-desktop
+    display: flex
+    padding: 50px 10px
+    width: 500px
+    justify-content: space-around
+    color: white
+    .navbar-btn
+      cursor: pointer
+    .btn1
+      flex-basis: 75px
+  .hero-block
+    display: flex
+  .hero-image
+    flex: 2 1 auto
+  .arrow-btn
+    right: -132px
+  .heroimg
+    height: 500px
+  .box
+    flex: 1 1 440px
+    padding: 70px 75px
+    h1
+      font-size: 32px
+  .content
+    position: relative
+    bottom: 5px
+    display: flex
+    height: 255px
+  .item1
+    flex: 1 1 auto
+  .item2
+    flex: 1 1 400px
+    padding: 50px 60px
+  .item3
+    flex: 1 1 auto
+  .about-image
+    height: 250px
+@media (min-width: 1250px)
+  .box
+    h1
+      font-size: 34px
+
+@media (min-width: 1500px)
+  .box
+    flex-basis: 350px
+    padding: 100px
+    h1
+      font-size: 34px
+    p
+      font-size: 13px
+  .item2
+    flex-basis: 480px
+    padding: 60px 60px
+    h2
+      font-size: 16px
+    p
+      font-size: 14px
+  .heroimg
+    height: 600px
+  .content
+    height: 300px
+  .about-image
+    height: 300px
